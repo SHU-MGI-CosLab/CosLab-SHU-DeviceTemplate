@@ -1,0 +1,20 @@
+{
+  "nodes": [
+    {
+      "id": "longer_bt100_1",
+      "name": "兰格蠕动泵BT100-2J",
+      "children": [],
+      "parent": null,
+      "type": "device",
+      "class": "longer_bt100",
+      "position": {"x": 0, "y": 0, "z": 0},
+      "config": {
+        "port": "COM4",
+        "baudrate": 1200,
+        "address": 1,
+        "serial_timeout": 0.5
+      },
+      "data": {}
+    }
+  ]
+}

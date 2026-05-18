@@ -1,0 +1,28 @@
+{
+    "nodes": [
+        {
+            "id": "jyhsm_temp_1",
+            "name": "JYHSM一体化温度变送器",
+            "children": [],
+            "parent": null,
+            "type": "device",
+            "class": "jyhsm_temperature_transmitter",
+            "position": {"x": 0, "y": 0, "z": 0},
+            "config": {
+                "port": "COM4",
+                "baudrate": 9600,
+                "slave_address": 1,
+                "timeout": 1.0
+            },
+            "data": {
+                "status": "Idle",
+                "temperature": 0.0,
+                "offset": 0.0,
+                "unit": "℃",
+                "slave_address": 1,
+                "baudrate": 9600
+            }
+        }
+    ],
+    "links": []
+}

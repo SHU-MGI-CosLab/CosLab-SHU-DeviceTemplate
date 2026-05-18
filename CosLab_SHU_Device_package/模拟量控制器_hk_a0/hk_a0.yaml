@@ -1,0 +1,137 @@
+hk_a0:
+  category:
+  - hk_a0
+  class:
+    action_value_mappings:
+      auto-initialize:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: initialize参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-post_init:
+        feedback: {}
+        goal: {}
+        goal_default:
+          ros_node: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                ros_node:
+                  type: string
+              required:
+              - ros_node
+              type: object
+            result: {}
+          required:
+          - goal
+          title: post_init参数
+          type: object
+        type: UniLabJsonCommand
+      auto-set_output:
+        feedback: {}
+        goal: {}
+        goal_default:
+          channel: null
+          value: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                channel:
+                  type: integer
+                value:
+                  type: number
+              required:
+              - channel
+              - value
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_output参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-stop_all:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: stop_all参数
+          type: object
+        type: UniLabJsonCommandAsync
+    module: unilabos.devices.custom.hk_a0:HKA0
+    status_types:
+      outputs: String
+      status: str
+    type: python
+  config:
+    baudrate: 9600
+    channel_count: 6
+    port: COM3
+    slave_address: 1
+  config_info: []
+  description: ''
+  handles: []
+  icon: ''
+  init_param_schema:
+    config:
+      properties:
+        config:
+          type: object
+        device_id:
+          type: string
+      required: []
+      type: object
+    data:
+      properties:
+        outputs:
+          items:
+            type: number
+          type: array
+        status:
+          type: string
+      required:
+      - status
+      - outputs
+      type: object
+  version: 1.0.0

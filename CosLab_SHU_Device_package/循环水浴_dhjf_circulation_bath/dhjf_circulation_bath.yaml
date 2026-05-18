@@ -1,0 +1,43 @@
+dhjf_circulation_bath:
+  category:
+  - dhjf_circulation_bath
+  class:
+    action_value_mappings: {}
+    module: unilabos.devices.temperature.dhjf_circulation_bath:DHJFCirculationBath
+    status_types: {}
+    type: python
+  config_info: []
+  description: ''
+  handles: []
+  icon: ''
+  init_param_schema: {}
+  ui:
+    description: DHJF-2005A 恒温循环水浴（RS485/Modbus），支持多段程序。温度以°C表示，内部以×100写入寄存器。
+    examples:
+    - call:
+        action: program
+        params:
+          segments:
+          - - 5
+            - 0
+            - 30
+          - - 10
+            - 1
+            - 0
+          - - 3
+            - 0
+            - 10
+      title: 三段程序示例
+    - call:
+        action: set_segment
+        params:
+          hours: 1
+          index: 2
+          minutes: 0
+          temperature: 10
+      title: 设置段数并单独设置第2段
+    notes:
+    - start_heating/start_cooling 为面板按键的脉冲触发，加热/制冷输出位是只读反馈，由设备温控逻辑决定。
+    - minutes 必须在 0~59；hours ≥ 0。
+    - set_temperature 仅对应第1段设温，以便与 temperature 类设备接口对齐。
+  version: 1.0.0
