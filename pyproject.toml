@@ -19,4 +19,4 @@ dev = [
 ]
 
 [tool.setuptools.packages.find]
-include = ["device_package_example*"]
+include = ["CosLab_SHU_Device_package*"]
