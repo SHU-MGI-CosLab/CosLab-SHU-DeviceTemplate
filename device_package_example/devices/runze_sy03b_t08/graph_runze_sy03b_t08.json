@@ -1,0 +1,30 @@
+{
+    "nodes": [
+        {
+            "id": "runze_pump_1",
+            "name": "SY-03B注射泵",
+            "children": [],
+            "parent": null,
+            "type": "device",
+            "class": "syringe_pump_with_valve.runze.SY03B-T08",
+            "position": {"x": 0, "y": 0, "z": 0},
+            "config": {
+                "port": "COM4",
+                "address": "1",
+                "max_volume": 25.0
+            },
+            "data": {
+                "status": "Offline",
+                "mode": 0,
+                "max_velocity": 0.5,
+                "velocity_grade": "600",
+                "velocity_init": "600",
+                "velocity_end": "600",
+                "valve_position": "0",
+                "position": 0.0,
+                "plunger_position": "0"
+            }
+        }
+    ],
+    "links": []
+}

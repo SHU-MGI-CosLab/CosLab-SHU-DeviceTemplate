@@ -1,0 +1,76 @@
+jyhsm_temperature_transmitter:
+  category:
+  - sensor
+  class:
+    module: unilabos.devices.sensor.jyhsm_temperature_transmitter:JyhsmTemperatureTransmitter
+    type: python
+    status_types:
+      status: str
+      temperature: float
+      offset: float
+      unit: str
+      slave_address: float
+      baudrate: float
+      target_temperature: float
+      tolerance: float
+      monitoring: bool
+      alarm_triggered: bool
+      alarm_status: str
+      level: bool
+      rssi: float
+    action_value_mappings:
+      read_temperature:
+        parameters: {}
+      set_offset:
+        parameters:
+          offset: float
+      set_unit:
+        parameters:
+          unit: float
+      set_slave_address:
+        parameters:
+          address: float
+      set_baudrate:
+        parameters:
+          baudrate: float
+      set_target_temperature:
+        parameters:
+          target: float
+      set_tolerance:
+        parameters:
+          tolerance: float
+      start_temperature_monitoring:
+        parameters:
+          target: float
+          tolerance: float
+          timeout: float
+      stop_temperature_monitoring:
+        parameters: {}
+      wait_for_temperature:
+        parameters:
+          target: float
+          tolerance: float
+          timeout: float
+  config_info: []
+  description: JYHSM一体化温度变送器，安徽久跃仪表有限公司生产。通过Modbus RTU协议(RS485)通信，支持实时温度监测、温度偏移校准、单位切换等功能。新增温度阈值监控功能，可设置目标温度并在达到时触发提醒，适用于实验过程监控和自动化工作流。
+  handles: []
+  icon: ''
+  init_param_schema:
+    config:
+      properties:
+        port:
+          default: COM4
+          type: string
+        baudrate:
+          default: 9600
+          type: integer
+        slave_address:
+          default: 1
+          type: integer
+        timeout:
+          default: 1.0
+          type: number
+      required:
+      - port
+      type: object
+  version: 1.0.0

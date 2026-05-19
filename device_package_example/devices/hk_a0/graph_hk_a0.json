@@ -1,0 +1,22 @@
+{
+    "nodes": [
+        {
+            "id": "hk_a0_module_1",
+            "name": "华控模拟量输出",
+            "children": [],
+            "parent": null,
+            "type": "device",
+            "class": "hk_a0",
+            "position": {
+                "x": 400,
+                "y": 300,
+                "z": 0
+            },
+            "config": {
+                "slave_address": 1
+            },
+            "data": {}
+        }
+    ],
+    "links": []
+}

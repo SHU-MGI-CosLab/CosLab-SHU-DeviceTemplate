@@ -1,0 +1,16 @@
+{
+  "nodes": [
+    {
+      "id": "dhjf_bath_1",
+      "name": "DHJF-2005A 恒温循环水浴",
+      "children": [],
+      "parent": null,
+      "type": "device",
+      "class": "dhjf_circulation_bath",
+      "position": {"x": 0, "y": 0, "z": 0},
+      "config": {"port": "COM4", "slave_id": 1, "baudrate": 9600, "timeout": 1.0},
+      "data": {}
+    }
+  ],
+  "links": []
+}

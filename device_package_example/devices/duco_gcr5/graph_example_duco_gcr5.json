@@ -1,0 +1,20 @@
+{
+  "nodes": [
+    {
+      "id": "duco_gcr5_1",
+      "name": "新松GCR5机械臂",
+      "children": [],
+      "parent": null,
+      "type": "device",
+      "class": "duco_gcr5",
+      "position": {"x": 500, "y": 500, "z": 0},
+      "config": {
+        "ip": "192.168.1.10",
+        "cmd_port": 2000,
+        "status_port": 2001,
+        "timeout": 5.0
+      },
+      "data": {}
+    }
+  ]
+}

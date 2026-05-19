@@ -1,0 +1,37 @@
+{
+  "nodes": [
+    {
+      "id": "xyz_guangdian_1",
+      "name": "XYZ光电工作台",
+      "children": [],
+      "parent": null,
+      "type": "device",
+      "class": "xyz_guangdian",
+      "position": {"x": 500, "y": 600, "z": 0},
+      "config": {
+        "port": "COM35",
+        "baudrate": 9600,
+        "timeout": 2.0,
+        "retry_count": 3,
+        "retry_delay": 0.1
+      },
+      "data": {
+        "status": "Idle",
+        "position_x": 0.0,
+        "position_y": 0.0,
+        "position_z": 0.0,
+        "push_rod_status": "released",
+        "is_enabled": false,
+        "is_homed": false,
+        "velocity_x": 0.0,
+        "velocity_y": 0.0,
+        "velocity_z": 0.0,
+        "temperature": 25.0,
+        "error_code": 0
+      }
+    }
+  ],
+  "edges": [],
+  "description": "XYZ光电工作台测试配置 - 修复版",
+  "version": "2.0"
+}

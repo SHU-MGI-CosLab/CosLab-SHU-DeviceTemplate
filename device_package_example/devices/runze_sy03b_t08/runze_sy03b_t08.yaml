@@ -1,0 +1,23 @@
+runze_sy03b_t08:
+  class:
+    module: unilab_ext.devices.runze_sy03b_t08:RunzeSY03BT08
+    type: python
+  config_schema:
+    type: object
+    properties:
+      port:
+        type: string
+        default: "COM4"
+        description: "串口端口号"
+      baudrate:
+        type: integer
+        default: 9600
+        description: "波特率"
+      address:
+        type: integer
+        default: 0
+        description: "设备地址开关值 (0-15)"
+      syringe_volume:
+        type: number
+        default: 25.0
+        description: "进样器规格"
