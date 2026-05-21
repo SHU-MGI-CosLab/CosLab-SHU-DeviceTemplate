@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "id": "bronkhorst_mfc_1",
+            "name": "Bronkhorst EL-FLOW Prestige MFC",
+            "children": [],
+            "parent": null,
+            "type": "device",
+            "class": "bronkhorst_el_flow",
+            "position": {"x": 200, "y": 200, "z": 0},
+            "config": {
+                "port": "COM12",
+                "baudrate": 38400,
+                "address": 3,
+                "channel": 1,
+                "threshold": 2.0
+            },
+            "data": {}
+        }
+    ]
+}

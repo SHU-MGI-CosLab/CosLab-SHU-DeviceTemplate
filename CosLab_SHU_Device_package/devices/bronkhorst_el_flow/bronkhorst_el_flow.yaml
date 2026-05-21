@@ -1,0 +1,276 @@
+bronkhorst_el_flow:
+  category:
+  - sensor
+  - bronkhorst_el_flow
+  class:
+    action_value_mappings:
+      auto-cleanup:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: cleanup参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-initialize:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: initialize参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-post_init:
+        feedback: {}
+        goal: {}
+        goal_default:
+          ros_node: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                ros_node:
+                  type: string
+              required:
+              - ros_node
+              type: object
+            result: {}
+          required:
+          - goal
+          title: post_init参数
+          type: object
+        type: UniLabJsonCommand
+      auto-read_value:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: read_value的参数schema
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: read_value参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-set_setpoint:
+        feedback: {}
+        goal: {}
+        goal_default:
+          setpoint: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: set_setpoint的参数schema
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                setpoint:
+                  type: number
+              required:
+              - setpoint
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_setpoint参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-set_setpoint_percent:
+        feedback: {}
+        goal: {}
+        goal_default:
+          percent: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: set_setpoint_percent的参数schema
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                percent:
+                  type: number
+              required:
+              - percent
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_setpoint_percent参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-set_threshold:
+        feedback: {}
+        goal: {}
+        goal_default:
+          threshold: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: set_threshold的参数schema
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                threshold:
+                  type: number
+              required:
+              - threshold
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_threshold参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-set_user_tag:
+        feedback: {}
+        goal: {}
+        goal_default:
+          tag: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: set_user_tag的参数schema
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                tag:
+                  type: string
+              required:
+              - tag
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_user_tag参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-stop:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: stop的参数schema
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: stop参数
+          type: object
+        type: UniLabJsonCommandAsync
+    module: unilabos.devices.sensor.bronkhorst_el_flow:BronkhorstElFlow
+    status_types:
+      capacity_unit: str
+      flow: float
+      level: bool
+      rssi: int
+      setpoint: float
+      status: str
+      temperature: float
+      user_tag: str
+      value: float
+      valve_output: float
+    type: python
+  config_info: []
+  description: Bronkhorst EL-FLOW Prestige 质量流量控制器(MFC)，通过RS232/RS485 ProPar协议通信，支持流量测量、设定点控制、温度监测和阀门输出监控。适用于气体流量精密控制的实验室自动化应用。
+  handles: []
+  icon: ''
+  init_param_schema:
+    config:
+      properties:
+        config:
+          type: object
+        device_id:
+          type: string
+      required: []
+      type: object
+    data:
+      properties:
+        capacity_unit:
+          type: string
+        flow:
+          type: number
+        level:
+          type: boolean
+        rssi:
+          type: integer
+        setpoint:
+          type: number
+        status:
+          type: string
+        temperature:
+          type: number
+        user_tag:
+          type: string
+        value:
+          type: number
+        valve_output:
+          type: number
+      required:
+      - status
+      - flow
+      - setpoint
+      - temperature
+      - valve_output
+      - capacity_unit
+      - user_tag
+      - level
+      - rssi
+      - value
+      type: object
+  version: 1.0.0
