@@ -1,0 +1,299 @@
+longer_bt100:
+  category:
+  - longer_bt100
+  class:
+    action_value_mappings:
+      auto-cleanup:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: cleanup参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-initialize:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: initialize参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-post_init:
+        feedback: {}
+        goal: {}
+        goal_default:
+          ros_node: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                ros_node:
+                  type: string
+              required:
+              - ros_node
+              type: object
+            result: {}
+          required:
+          - goal
+          title: post_init参数
+          type: object
+        type: UniLabJsonCommand
+      auto-read_status:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: read_status参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-run_for_duration:
+        feedback: {}
+        goal: {}
+        goal_default:
+          direction: null
+          duration: null
+          speed: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                direction:
+                  type: string
+                duration:
+                  type: number
+                speed:
+                  type: number
+              required:
+              - duration
+              type: object
+            result: {}
+          required:
+          - goal
+          title: run_for_duration参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-set_direction:
+        feedback: {}
+        goal: {}
+        goal_default:
+          direction: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                direction:
+                  type: string
+              required:
+              - direction
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_direction参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-set_fullspeed:
+        feedback: {}
+        goal: {}
+        goal_default:
+          enable: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                enable:
+                  type: boolean
+              required:
+              - enable
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_fullspeed参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-set_speed:
+        feedback: {}
+        goal: {}
+        goal_default:
+          speed: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                speed:
+                  type: number
+              required:
+              - speed
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_speed参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-start:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: start参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-stop:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: stop参数
+          type: object
+        type: UniLabJsonCommandAsync
+    module: unilabos.devices.pump_and_valve.longer_bt100:LongerBT100
+    status_types:
+      direction: str
+      is_fullspeed: bool
+      speed: float
+      status: str
+    type: python
+  config_info: []
+  config_schema:
+    properties:
+      address:
+        default: 1
+        description: 设备地址，1-30 为单设备，31 为广播
+        maximum: 31
+        minimum: 1
+        type: integer
+      baudrate:
+        default: 1200
+        description: 波特率，固定 1200
+        type: integer
+      port:
+        default: COM4
+        description: 串口设备路径，如 COM4 或 /dev/ttyUSB0
+        type: string
+      serial_timeout:
+        default: 0.5
+        description: 串口读取超时（秒）
+        type: number
+    type: object
+  description: ''
+  handles: []
+  icon: ''
+  init_param_schema:
+    config:
+      properties:
+        config:
+          type: object
+        device_id:
+          type: string
+      required: []
+      type: object
+    data:
+      properties:
+        direction:
+          type: string
+        is_fullspeed:
+          type: boolean
+        speed:
+          type: number
+        status:
+          type: string
+      required:
+      - status
+      - speed
+      - direction
+      - is_fullspeed
+      type: object
+  version: 1.0.0

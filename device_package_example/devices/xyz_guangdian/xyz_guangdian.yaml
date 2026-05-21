@@ -1,0 +1,542 @@
+xyz_guangdian:
+  action_value_mappings:
+    clamp_glass:
+      command: clamp_glass
+      description: 夹紧玻璃
+    disable:
+      command: disable
+      description: 禁用所有轴
+    enable:
+      command: enable
+      description: 使能所有轴
+    get_position:
+      command: get_position
+      description: 获取当前位置
+    go_home:
+      command: go_home
+      description: 回零操作
+    move_absolute:
+      command: move_absolute
+      description: 绝对移动
+      parameters:
+        wait_done:
+          default: true
+          type: bool
+        x:
+          default: 0.0
+          type: float
+          unit: mm
+        y:
+          default: 0.0
+          type: float
+          unit: mm
+        z:
+          default: 0.0
+          type: float
+          unit: mm
+    move_relative:
+      command: move_relative
+      description: 相对移动
+      parameters:
+        wait_done:
+          default: true
+          type: bool
+        x_delta:
+          default: 0.0
+          type: float
+          unit: mm
+        y_delta:
+          default: 0.0
+          type: float
+          unit: mm
+        z_delta:
+          default: 0.0
+          type: float
+          unit: mm
+    release_glass:
+      command: release_glass
+      description: 释放玻璃
+    reset_error:
+      command: reset_error
+      description: 重置错误
+    set_acceleration:
+      command: set_acceleration
+      description: 设置轴加速度
+      parameters:
+        accel:
+          type: float
+          unit: mm/s²
+        axis:
+          type: string
+          values:
+          - x
+          - y
+          - z
+    set_speed:
+      command: set_speed
+      description: 设置轴速度
+      parameters:
+        axis:
+          type: string
+          values:
+          - x
+          - y
+          - z
+        speed:
+          type: float
+          unit: mm/s
+    stop_all:
+      command: stop_all
+      description: 停止所有运动
+  category:
+  - xyz_guangdian
+  class:
+    action_value_mappings:
+      auto-clamp_glass:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: clamp_glass参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-cleanup:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: cleanup参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-disable:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: disable参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-enable:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: enable参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-go_home:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: go_home参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-initialize:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: initialize参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-move_absolute:
+        feedback: {}
+        goal: {}
+        goal_default:
+          wait_done: true
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                wait_done:
+                  default: true
+                  type: boolean
+                x:
+                  default: 0.0
+                  type: number
+                y:
+                  default: 0.0
+                  type: number
+                z:
+                  default: 0.0
+                  type: number
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: move_absolute参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-move_relative:
+        feedback: {}
+        goal: {}
+        goal_default:
+          wait_done: true
+          x_delta: 0.0
+          y_delta: 0.0
+          z_delta: 0.0
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                wait_done:
+                  default: true
+                  type: boolean
+                x_delta:
+                  default: 0.0
+                  type: number
+                y_delta:
+                  default: 0.0
+                  type: number
+                z_delta:
+                  default: 0.0
+                  type: number
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: move_relative参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-post_init:
+        feedback: {}
+        goal: {}
+        goal_default:
+          ros_node: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                ros_node:
+                  type: string
+              required:
+              - ros_node
+              type: object
+            result: {}
+          required:
+          - goal
+          title: post_init参数
+          type: object
+        type: UniLabJsonCommand
+      auto-release_glass:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: release_glass参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-reset_error:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: reset_error参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-set_acceleration:
+        feedback: {}
+        goal: {}
+        goal_default:
+          accel: null
+          axis: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                accel:
+                  type: number
+                axis:
+                  type: string
+              required:
+              - axis
+              - accel
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_acceleration参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-set_speed:
+        feedback: {}
+        goal: {}
+        goal_default:
+          axis: null
+          speed: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                axis:
+                  type: string
+                speed:
+                  type: number
+              required:
+              - axis
+              - speed
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_speed参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-stop_all:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: stop_all参数
+          type: object
+        type: UniLabJsonCommandAsync
+    module: unilabos.devices.workstation.xyz_guangdian:XYZGuangdian
+    status_types:
+      error_code: int
+      is_enabled: bool
+      is_homed: bool
+      position: dict
+      push_rod_status: str
+      status: str
+    type: python
+  config_info: []
+  default_config:
+    baudrate: 9600
+    port: COM35
+    retry_count: 3
+    retry_delay: 0.1
+    timeout: 2.0
+  description: ''
+  handles: []
+  icon: ''
+  init_param_schema:
+    config:
+      properties:
+        config:
+          type: object
+        device_id:
+          type: string
+      required: []
+      type: object
+    data:
+      properties:
+        error_code:
+          type: integer
+        is_enabled:
+          type: boolean
+        is_homed:
+          type: boolean
+        position:
+          type: object
+        push_rod_status:
+          type: string
+        status:
+          type: string
+      required:
+      - status
+      - position
+      - is_homed
+      - is_enabled
+      - push_rod_status
+      - error_code
+      type: object
+  status_types:
+    error_code:
+      description: 错误代码
+      type: int
+    is_enabled:
+      description: 是否使能
+      type: bool
+    is_homed:
+      description: 是否回零
+      type: bool
+    position_x:
+      description: X轴位置
+      type: float
+      unit: mm
+    position_y:
+      description: Y轴位置
+      type: float
+      unit: mm
+    position_z:
+      description: Z轴位置
+      type: float
+      unit: mm
+    push_rod_status:
+      description: 推杆状态
+      type: string
+      values:
+      - clamped
+      - released
+    status:
+      type: string
+      values:
+      - Idle
+      - Busy
+      - Error
+      - Offline
+    temperature:
+      description: 温度
+      type: float
+      unit: °C
+    velocity_x:
+      description: X轴速度
+      type: float
+      unit: mm/s
+    velocity_y:
+      description: Y轴速度
+      type: float
+      unit: mm/s
+    velocity_z:
+      description: Z轴速度
+      type: float
+      unit: mm/s
+  version: 1.0.0
