@@ -1,0 +1,360 @@
+daheng_hd_r630c:
+  action_value_mappings:
+    set_exposure_time:
+      goal:
+        exposure_time: exposure_time
+      goal_default:
+        exposure_time: 10000.0
+      handles: {}
+      placeholder_keys: {}
+      result:
+        success: success
+      schema:
+        properties:
+          goal:
+            properties:
+              exposure_time:
+                type: number
+            required:
+            - exposure_time
+            type: object
+        required:
+        - goal
+        title: set_exposure_time参数
+        type: object
+      type: UniLabJsonCommandAsync
+    set_gain:
+      goal:
+        gain: gain
+      goal_default:
+        gain: 0.0
+      handles: {}
+      placeholder_keys: {}
+      result:
+        success: success
+      schema:
+        properties:
+          goal:
+            properties:
+              gain:
+                type: number
+            required:
+            - gain
+            type: object
+        required:
+        - goal
+        title: set_gain参数
+        type: object
+      type: UniLabJsonCommandAsync
+    snap:
+      goal: {}
+      goal_default: {}
+      handles: {}
+      placeholder_keys: {}
+      result:
+        success: success
+      schema:
+        properties:
+          goal:
+            properties: {}
+            type: object
+        required:
+        - goal
+        title: snap参数
+        type: object
+      type: UniLabJsonCommandAsync
+    start_stream:
+      goal: {}
+      goal_default: {}
+      handles: {}
+      placeholder_keys: {}
+      result:
+        success: success
+      schema:
+        properties:
+          goal:
+            properties: {}
+            type: object
+        required:
+        - goal
+        title: start_stream参数
+        type: object
+      type: UniLabJsonCommandAsync
+    stop_stream:
+      goal: {}
+      goal_default: {}
+      handles: {}
+      placeholder_keys: {}
+      result:
+        success: success
+      schema:
+        properties:
+          goal:
+            properties: {}
+            type: object
+        required:
+        - goal
+        title: stop_stream参数
+        type: object
+      type: UniLabJsonCommandAsync
+  category:
+  - sensor
+  - daheng_hd_r630c
+  class:
+    action_value_mappings:
+      auto-cleanup:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: cleanup参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-initialize:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: initialize参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-post_init:
+        feedback: {}
+        goal: {}
+        goal_default:
+          ros_node: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                ros_node:
+                  type: string
+              required:
+              - ros_node
+              type: object
+            result: {}
+          required:
+          - goal
+          title: post_init参数
+          type: object
+        type: UniLabJsonCommand
+      auto-set_exposure_time:
+        feedback: {}
+        goal: {}
+        goal_default:
+          exposure_time: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                exposure_time:
+                  type: number
+              required:
+              - exposure_time
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_exposure_time参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-set_gain:
+        feedback: {}
+        goal: {}
+        goal_default:
+          gain: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                gain:
+                  type: number
+              required:
+              - gain
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_gain参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-snap:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: snap参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-start_stream:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: start_stream参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-stop_stream:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: stop_stream参数
+          type: object
+        type: UniLabJsonCommandAsync
+    module: unilabos.devices.sensor.daheng_hd_r630c:DahengHdR630c
+    status_types:
+      exposure_time: float
+      frame_rate: float
+      gain: float
+      image_height: int
+      image_width: int
+      is_streaming: bool
+      last_frame_id: int
+      last_image: String
+      level: bool
+      rssi: int
+      status: str
+    type: python
+  config_info: []
+  description: 度申 DO3THINK M3S630-H-O2C (HD-R630C-U3) USB3 Vision 彩色工业相机
+  handles: []
+  icon: ''
+  init_param_schema:
+    config:
+      properties:
+        config:
+          type: object
+        device_id:
+          type: string
+      required: []
+      type: object
+    data:
+      properties:
+        exposure_time:
+          type: number
+        frame_rate:
+          type: number
+        gain:
+          type: number
+        image_height:
+          type: integer
+        image_width:
+          type: integer
+        is_streaming:
+          type: boolean
+        last_frame_id:
+          type: integer
+        last_image:
+          type: string
+        level:
+          type: boolean
+        rssi:
+          type: integer
+        status:
+          type: string
+      required:
+      - status
+      - exposure_time
+      - gain
+      - frame_rate
+      - image_width
+      - image_height
+      - is_streaming
+      - last_frame_id
+      - level
+      - rssi
+      - last_image
+      type: object
+  status_types:
+    exposure_time: Float64
+    frame_rate: Float64
+    gain: Float64
+    image_height: Int64
+    image_width: Int64
+    is_streaming: Bool
+    last_frame_id: Int64
+    level: Bool
+    rssi: Int64
+    status: String
+  version: 1.0.0

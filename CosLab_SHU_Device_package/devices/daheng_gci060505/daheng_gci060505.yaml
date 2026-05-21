@@ -1,0 +1,198 @@
+daheng_gci060505:
+  category:
+  - custom
+  - daheng_gci060505
+  class:
+    action_value_mappings:
+      auto-cleanup:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: cleanup参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-initialize:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: initialize参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-post_init:
+        feedback: {}
+        goal: {}
+        goal_default:
+          ros_node: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                ros_node:
+                  type: string
+              required:
+              - ros_node
+              type: object
+            result: {}
+          required:
+          - goal
+          title: post_init参数
+          type: object
+        type: UniLabJsonCommand
+      auto-refresh_status:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: refresh_status参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-set_brightness:
+        feedback: {}
+        goal: {}
+        goal_default:
+          brightness: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                brightness:
+                  type: number
+              required:
+              - brightness
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_brightness参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-turn_off:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: turn_off参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-turn_on:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: turn_on参数
+          type: object
+        type: UniLabJsonCommandAsync
+    module: unilabos.devices.custom.daheng_gci060505:DahengGCI060505
+    status_types:
+      brightness: float
+      light_on: bool
+      max_brightness: float
+      status: str
+    type: python
+  config_info: []
+  description: 大恒光电 GCI-060505 LED 光源 (控制器 GCI-060551), 通过 Arduino + MCP4725 DAC 中间层控制
+  handles: []
+  icon: ''
+  init_param_schema:
+    config:
+      properties:
+        config:
+          type: object
+        device_id:
+          type: string
+      required: []
+      type: object
+    data:
+      properties:
+        brightness:
+          type: number
+        light_on:
+          type: boolean
+        max_brightness:
+          type: number
+        status:
+          type: string
+      required:
+      - status
+      - brightness
+      - light_on
+      - max_brightness
+      type: object
+  version: 1.0.0

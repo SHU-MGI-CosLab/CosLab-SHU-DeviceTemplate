@@ -1,0 +1,456 @@
+zolix_omni_lambda:
+  category:
+  - custom
+  - zolix_omni_lambda
+  class:
+    action_value_mappings:
+      auto-cleanup:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: cleanup参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-grating_home:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: grating_home参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-initialize:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: initialize参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-move_relative:
+        feedback: {}
+        goal: {}
+        goal_default:
+          wavelength: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                wavelength:
+                  type: number
+              required:
+              - wavelength
+              type: object
+            result: {}
+          required:
+          - goal
+          title: move_relative参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-move_to:
+        feedback: {}
+        goal: {}
+        goal_default:
+          wavelength: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                wavelength:
+                  type: number
+              required:
+              - wavelength
+              type: object
+            result: {}
+          required:
+          - goal
+          title: move_to参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-move_to_wavenumber:
+        feedback: {}
+        goal: {}
+        goal_default:
+          wavenumber: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                wavenumber:
+                  type: number
+              required:
+              - wavenumber
+              type: object
+            result: {}
+          required:
+          - goal
+          title: move_to_wavenumber参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-post_init:
+        feedback: {}
+        goal: {}
+        goal_default:
+          ros_node: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                ros_node:
+                  type: string
+              required:
+              - ros_node
+              type: object
+            result: {}
+          required:
+          - goal
+          title: post_init参数
+          type: object
+        type: UniLabJsonCommand
+      auto-query_gratings:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: query_gratings参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-query_position:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: query_position参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-query_system_info:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: query_system_info参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-send_command:
+        feedback: {}
+        goal: {}
+        goal_default:
+          command: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                command:
+                  type: string
+              required:
+              - command
+              type: object
+            result: {}
+          required:
+          - goal
+          title: send_command参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-set_entrance_port:
+        feedback: {}
+        goal: {}
+        goal_default:
+          port: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                port:
+                  type: string
+              required:
+              - port
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_entrance_port参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-set_exit_port:
+        feedback: {}
+        goal: {}
+        goal_default:
+          port: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                port:
+                  type: string
+              required:
+              - port
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_exit_port参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-set_grating:
+        feedback: {}
+        goal: {}
+        goal_default:
+          grating: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                grating:
+                  type: string
+              required:
+              - grating
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_grating参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-set_port_output:
+        feedback: {}
+        goal: {}
+        goal_default:
+          value: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                value:
+                  type: string
+              required:
+              - value
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_port_output参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-set_turret:
+        feedback: {}
+        goal: {}
+        goal_default:
+          turret: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                turret:
+                  type: string
+              required:
+              - turret
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_turret参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-stop:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: stop参数
+          type: object
+        type: UniLabJsonCommandAsync
+    module: unilabos.devices.custom.zolix_omni_lambda:ZolixOmniLambda
+    status_types:
+      entrance_port: str
+      exit_port: str
+      grating: str
+      status: str
+      system_info: str
+      turret: str
+      wavelength: float
+      wavenumber: float
+    type: python
+  config_info: []
+  description: Zolix Omni-λ 单色仪/光谱仪
+  handles: []
+  icon: ''
+  init_param_schema:
+    config:
+      properties:
+        config:
+          type: object
+        device_id:
+          type: string
+      required: []
+      type: object
+    data:
+      properties:
+        entrance_port:
+          type: string
+        exit_port:
+          type: string
+        grating:
+          type: string
+        status:
+          type: string
+        system_info:
+          type: string
+        turret:
+          type: string
+        wavelength:
+          type: number
+        wavenumber:
+          type: number
+      required:
+      - status
+      - wavelength
+      - wavenumber
+      - grating
+      - turret
+      - exit_port
+      - entrance_port
+      - system_info
+      type: object
+  version: 1.0.0

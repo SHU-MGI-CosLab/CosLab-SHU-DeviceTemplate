@@ -1,0 +1,226 @@
+cni_laser_msl_u_532:
+  category:
+  - cni_laser_msl_u_532
+  class:
+    action_value_mappings:
+      auto-cleanup:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: cleanup参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-emergency_stop:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: emergency_stop参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-initialize:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: initialize参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-post_init:
+        feedback: {}
+        goal: {}
+        goal_default:
+          ros_node: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                ros_node:
+                  type: string
+              required:
+              - ros_node
+              type: object
+            result: {}
+          required:
+          - goal
+          title: post_init参数
+          type: object
+        type: UniLabJsonCommand
+      auto-set_power:
+        feedback: {}
+        goal: {}
+        goal_default:
+          power: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                power:
+                  type: number
+              required:
+              - power
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_power参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-set_power_percentage:
+        feedback: {}
+        goal: {}
+        goal_default:
+          percentage: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                percentage:
+                  type: number
+              required:
+              - percentage
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_power_percentage参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-turn_off:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: turn_off参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-turn_on:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: turn_on参数
+          type: object
+        type: UniLabJsonCommandAsync
+    module: unilabos.devices.custom.cni_laser_msl_u_532:CNILaserMSLU532
+    status_types:
+      laser_on: str
+      power: float
+      power_percentage: float
+      status: str
+      wavelength: float
+    type: python
+  config_info: []
+  description: ''
+  handles: []
+  icon: ''
+  init_param_schema:
+    config:
+      properties:
+        config:
+          type: object
+        device_id:
+          type: string
+      required: []
+      type: object
+    data:
+      properties:
+        laser_on:
+          type: string
+        power:
+          type: number
+        power_percentage:
+          type: number
+        status:
+          type: string
+        wavelength:
+          type: number
+      required:
+      - status
+      - laser_on
+      - power
+      - power_percentage
+      - wavelength
+      type: object
+  version: 1.0.0

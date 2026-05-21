@@ -1,0 +1,19 @@
+{
+    "nodes": [
+        {
+            "id": "daheng_light_1",
+            "name": "大恒光电 GCI-060505 LED 光源",
+            "children": [],
+            "parent": null,
+            "type": "device",
+            "class": "daheng_gci060505",
+            "position": {"x": 100, "y": -300, "z": 0},
+            "config": {
+                "port": "COM14",
+                "baudrate": 9600,
+                "timeout": 2
+            },
+            "data": {}
+        }
+    ]
+}

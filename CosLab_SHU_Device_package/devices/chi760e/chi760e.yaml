@@ -1,0 +1,467 @@
+chi760e:
+  category:
+  - sensor
+  - chi760e
+  class:
+    action_value_mappings:
+      auto-cleanup:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: cleanup参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-initialize:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: initialize参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-list_data_files:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: list_data_files参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-post_init:
+        feedback: {}
+        goal: {}
+        goal_default:
+          ros_node: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                ros_node:
+                  type: string
+              required:
+              - ros_node
+              type: object
+            result: {}
+          required:
+          - goal
+          title: post_init参数
+          type: object
+        type: UniLabJsonCommand
+      auto-read_data:
+        feedback: {}
+        goal: {}
+        goal_default:
+          file_name: ''
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                file_name:
+                  default: ''
+                  type: string
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: read_data参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-run_ca:
+        feedback: {}
+        goal: {}
+        goal_default:
+          dt: 0.001
+          ei: 0.2
+          qt: 2.0
+          resistance: 0.0
+          sens: 0.0
+          ttot: 2.0
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                dt:
+                  default: 0.001
+                  type: number
+                ei:
+                  default: 0.2
+                  type: number
+                qt:
+                  default: 2.0
+                  type: number
+                resistance:
+                  default: 0.0
+                  type: number
+                sens:
+                  default: 0.0
+                  type: number
+                ttot:
+                  default: 2.0
+                  type: number
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: run_ca参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-run_cv:
+        feedback: {}
+        goal: {}
+        goal_default:
+          de: 0.001
+          ef: -0.2
+          ei: -0.2
+          ev1: 0.2
+          ev2: -0.2
+          n_sweeps: 2.0
+          qt: 2.0
+          resistance: 0.0
+          sens: 0.0
+          sr: 0.1
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                de:
+                  default: 0.001
+                  type: number
+                ef:
+                  default: -0.2
+                  type: number
+                ei:
+                  default: -0.2
+                  type: number
+                ev1:
+                  default: 0.2
+                  type: number
+                ev2:
+                  default: -0.2
+                  type: number
+                n_sweeps:
+                  default: 2.0
+                  type: number
+                qt:
+                  default: 2.0
+                  type: number
+                resistance:
+                  default: 0.0
+                  type: number
+                sens:
+                  default: 0.0
+                  type: number
+                sr:
+                  default: 0.1
+                  type: number
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: run_cv参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-run_eis:
+        feedback: {}
+        goal: {}
+        goal_default:
+          amp: 0.01
+          ei: 0.0
+          fh: 100000.0
+          fl: 1.0
+          qt: 2.0
+          sens: 0.0
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                amp:
+                  default: 0.01
+                  type: number
+                ei:
+                  default: 0.0
+                  type: number
+                fh:
+                  default: 100000.0
+                  type: number
+                fl:
+                  default: 1.0
+                  type: number
+                qt:
+                  default: 2.0
+                  type: number
+                sens:
+                  default: 0.0
+                  type: number
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: run_eis参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-run_lsv:
+        feedback: {}
+        goal: {}
+        goal_default:
+          de: 0.001
+          ef: 0.2
+          ei: -0.2
+          qt: 2.0
+          resistance: 0.0
+          sens: 0.0
+          sr: 0.1
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                de:
+                  default: 0.001
+                  type: number
+                ef:
+                  default: 0.2
+                  type: number
+                ei:
+                  default: -0.2
+                  type: number
+                qt:
+                  default: 2.0
+                  type: number
+                resistance:
+                  default: 0.0
+                  type: number
+                sens:
+                  default: 0.0
+                  type: number
+                sr:
+                  default: 0.1
+                  type: number
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: run_lsv参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-run_npv:
+        feedback: {}
+        goal: {}
+        goal_default:
+          de: 0.01
+          ef: -0.5
+          ei: 0.5
+          prod: 10.0
+          pw: 0.1
+          qt: 2.0
+          sens: 0.0
+          sw: 0.05
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                de:
+                  default: 0.01
+                  type: number
+                ef:
+                  default: -0.5
+                  type: number
+                ei:
+                  default: 0.5
+                  type: number
+                prod:
+                  default: 10.0
+                  type: number
+                pw:
+                  default: 0.1
+                  type: number
+                qt:
+                  default: 2.0
+                  type: number
+                sens:
+                  default: 0.0
+                  type: number
+                sw:
+                  default: 0.05
+                  type: number
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: run_npv参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-run_ocp:
+        feedback: {}
+        goal: {}
+        goal_default:
+          dt: 0.01
+          qt: 2.0
+          ttot: 10.0
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                dt:
+                  default: 0.01
+                  type: number
+                qt:
+                  default: 2.0
+                  type: number
+                ttot:
+                  default: 10.0
+                  type: number
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: run_ocp参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-stop_operation:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: stop_operation参数
+          type: object
+        type: UniLabJsonCommandAsync
+    module: unilabos.devices.sensor.chi760e:CHI760E
+    status_types:
+      data_folder: str
+      last_data_file: str
+      last_experiment_time: str
+      status: str
+      technique: str
+    type: python
+  config_info: []
+  description: 辰华 CHI760E 电化学工作站 (通过 CHI 软件宏命令控制)
+  handles: []
+  icon: ''
+  init_param_schema:
+    config:
+      properties:
+        config:
+          type: object
+        device_id:
+          type: string
+      required: []
+      type: object
+    data:
+      properties:
+        data_folder:
+          type: string
+        last_data_file:
+          type: string
+        last_experiment_time:
+          type: string
+        status:
+          type: string
+        technique:
+          type: string
+      required:
+      - status
+      - technique
+      - last_data_file
+      - last_experiment_time
+      - data_folder
+      type: object
+  version: 1.0.0

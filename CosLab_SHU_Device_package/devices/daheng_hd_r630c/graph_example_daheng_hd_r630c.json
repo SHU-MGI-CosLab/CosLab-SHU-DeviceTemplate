@@ -1,0 +1,35 @@
+{
+  "nodes": [
+    {
+      "id": "daheng_camera_1",
+      "name": "度申 M3S630-H-O2C 工业相机",
+      "children": [],
+      "parent": null,
+      "type": "device",
+      "class": "daheng_hd_r630c",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "config": {
+        "cti_path": "C:\\Program Files (x86)\\Do3think\\DVP2 x64\\DVPCameraTL64.cti",
+        "device_index": 0,
+        "default_exposure_time": 10000.0,
+        "default_gain": 0.0
+      },
+      "data": {
+        "status": "Idle",
+        "exposure_time": 10000.0,
+        "gain": 0.0,
+        "frame_rate": 0.0,
+        "image_width": 0,
+        "image_height": 0,
+        "is_streaming": false,
+        "last_frame_id": 0,
+        "level": false,
+        "rssi": 0
+      }
+    }
+  ]
+}

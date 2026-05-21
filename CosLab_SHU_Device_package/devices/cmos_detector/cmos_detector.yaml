@@ -1,0 +1,546 @@
+cmos_detector:
+  category:
+  - cmos_detector
+  class:
+    action_value_mappings:
+      auto-cleanup:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: cleanup参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-initialize:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: initialize参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-post_init:
+        feedback: {}
+        goal: {}
+        goal_default:
+          ros_node: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                ros_node:
+                  type: string
+              required:
+              - ros_node
+              type: object
+            result: {}
+          required:
+          - goal
+          title: post_init参数
+          type: object
+        type: UniLabJsonCommand
+      auto-read_correction_coefficients:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: read_correction_coefficients参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-read_frame:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: read_frame参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-save_data_to_file:
+        feedback: {}
+        goal: {}
+        goal_default:
+          filename: ''
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                filename:
+                  default: ''
+                  type: string
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: save_data_to_file参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-save_parameters:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: save_parameters参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-set_analog_output:
+        feedback: {}
+        goal: {}
+        goal_default:
+          voltage: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                voltage:
+                  type: number
+              required:
+              - voltage
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_analog_output参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-set_average_count:
+        feedback: {}
+        goal: {}
+        goal_default:
+          count: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                count:
+                  type: number
+              required:
+              - count
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_average_count参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-set_gain:
+        feedback: {}
+        goal: {}
+        goal_default:
+          gain: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                gain:
+                  type: number
+              required:
+              - gain
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_gain参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-set_integration_time:
+        feedback: {}
+        goal: {}
+        goal_default:
+          time: null
+          unit: ms
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                time:
+                  type: number
+                unit:
+                  default: ms
+                  type: string
+              required:
+              - time
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_integration_time参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-set_offset:
+        feedback: {}
+        goal: {}
+        goal_default:
+          offset: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                offset:
+                  type: number
+              required:
+              - offset
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_offset参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-set_smooth_level:
+        feedback: {}
+        goal: {}
+        goal_default:
+          level: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                level:
+                  type: number
+              required:
+              - level
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_smooth_level参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-set_sync_output:
+        feedback: {}
+        goal: {}
+        goal_default:
+          enable: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                enable:
+                  type: number
+              required:
+              - enable
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_sync_output参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-set_trigger_interval:
+        feedback: {}
+        goal: {}
+        goal_default:
+          interval: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                interval:
+                  type: number
+              required:
+              - interval
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_trigger_interval参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-set_trigger_mode:
+        feedback: {}
+        goal: {}
+        goal_default:
+          mode: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                mode:
+                  type: number
+              required:
+              - mode
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_trigger_mode参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-set_trigger_out2:
+        feedback: {}
+        goal: {}
+        goal_default:
+          level: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                level:
+                  type: number
+              required:
+              - level
+              type: object
+            result: {}
+          required:
+          - goal
+          title: set_trigger_out2参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-start_continuous_acquisition:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: start_continuous_acquisition参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-start_single_acquisition:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: start_single_acquisition参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-stop_acquisition:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: stop_acquisition参数
+          type: object
+        type: UniLabJsonCommandAsync
+    module: unilabos.devices.sensor.cmos_detector:CMOSDetector
+    status_types:
+      average_count: float
+      gain: float
+      integration_time: float
+      integration_time_unit: str
+      level: str
+      offset: float
+      smooth_level: float
+      status: str
+      trigger_interval: float
+      trigger_mode: float
+      value: str
+      version_info: str
+    type: python
+  config_info: []
+  description: ''
+  handles: []
+  icon: ''
+  init_param_schema:
+    config:
+      properties:
+        config:
+          type: object
+        device_id:
+          type: string
+      required: []
+      type: object
+    data:
+      properties:
+        average_count:
+          type: number
+        gain:
+          type: number
+        integration_time:
+          type: number
+        integration_time_unit:
+          type: string
+        level:
+          type: string
+        offset:
+          type: number
+        smooth_level:
+          type: number
+        status:
+          type: string
+        trigger_interval:
+          type: number
+        trigger_mode:
+          type: number
+        value:
+          type: string
+        version_info:
+          type: string
+      required:
+      - status
+      - level
+      - value
+      - integration_time
+      - integration_time_unit
+      - gain
+      - offset
+      - smooth_level
+      - average_count
+      - trigger_mode
+      - trigger_interval
+      - version_info
+      type: object
+  version: 1.0.0

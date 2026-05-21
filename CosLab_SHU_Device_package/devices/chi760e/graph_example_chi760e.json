@@ -1,0 +1,19 @@
+{
+    "nodes": [
+        {
+            "id": "chi760e_1",
+            "name": "辰华CHI760E电化学工作站",
+            "children": [],
+            "parent": null,
+            "type": "device",
+            "class": "chi760e",
+            "position": {"x": 300, "y": 300, "z": 0},
+            "config": {
+                "chi_exe_path": "C:/Users/lsd/Desktop/chi760e/chi760e.exe",
+                "data_folder": "C:/Users/lsd/Desktop/chi760e_data",
+                "default_sens": 1e-6
+            },
+            "data": {}
+        }
+    ]
+}

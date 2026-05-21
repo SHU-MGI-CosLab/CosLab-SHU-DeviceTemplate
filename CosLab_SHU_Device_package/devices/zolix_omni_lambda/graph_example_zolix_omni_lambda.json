@@ -1,0 +1,19 @@
+{
+    "nodes": [
+        {
+            "id": "zolix_omni_lambda_1",
+            "name": "Zolix Omni-λ 光谱仪",
+            "children": [],
+            "parent": null,
+            "type": "device",
+            "class": "zolix_omni_lambda",
+            "position": {"x": 0, "y": 0, "z": 0},
+            "config": {
+                "port": "COM11",
+                "baudrate": 19200,
+                "timeout": 5
+            },
+            "data": {}
+        }
+    ]
+}

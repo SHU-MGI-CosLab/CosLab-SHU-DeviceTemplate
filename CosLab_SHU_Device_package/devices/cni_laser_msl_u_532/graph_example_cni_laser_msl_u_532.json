@@ -1,0 +1,24 @@
+{
+  "nodes": [
+    {
+      "id": "cni_laser_1",
+      "name": "CNI MSL-U-532 激光器",
+      "children": [],
+      "parent": null,
+      "type": "device",
+      "class": "cni_laser_msl_u_532",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "config": {
+        "port": "COM13",
+        "baudrate": 9600,
+        "timeout": 2,
+        "max_power_mw": 50.0
+      },
+      "data": {}
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+    "nodes": [
+        {
+            "id": "electrolytic_cell_gripper_1",
+            "name": "电解池夹爪",
+            "children": [],
+            "parent": null,
+            "type": "device",
+            "class": "electrolytic_cell_gripper",
+            "position": {"x": 0, "y": 0, "z": 0},
+            "config": {
+                "port": "COM29",
+                "baudrate": 115200,
+                "timeout": 0.5,
+                "motor1_slave_id": 1,
+                "motor2_slave_id": 2,
+                "gripper_slave_id": 5
+            },
+            "data": {}
+        }
+    ]
+}

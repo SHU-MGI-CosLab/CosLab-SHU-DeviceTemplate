@@ -1,0 +1,185 @@
+electrolytic_cell_gripper:
+  action_value_mappings:
+    emergency_stop:
+      description: 紧急停止所有电机
+      goal: {}
+      result:
+        success: success
+      type: SendCmd
+    pick_sample:
+      description: 夹取样品 — 初始化夹爪→电机归零→移动到位→夹取→收回
+      goal: {}
+      result:
+        success: success
+      type: SendCmd
+    place_sample:
+      description: 放下样品 — 移动到位→张开夹爪→收回
+      goal: {}
+      result:
+        success: success
+      type: SendCmd
+  category:
+  - custom
+  - electrolytic_cell_gripper
+  class:
+    action_value_mappings:
+      auto-cleanup:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: cleanup参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-emergency_stop:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: emergency_stop参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-initialize:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: initialize参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-pick_sample:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: pick_sample参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-place_sample:
+        feedback: {}
+        goal: {}
+        goal_default: {}
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties: {}
+              required: []
+              type: object
+            result: {}
+          required:
+          - goal
+          title: place_sample参数
+          type: object
+        type: UniLabJsonCommandAsync
+      auto-post_init:
+        feedback: {}
+        goal: {}
+        goal_default:
+          ros_node: null
+        handles: {}
+        placeholder_keys: {}
+        result: {}
+        schema:
+          description: ''
+          properties:
+            feedback: {}
+            goal:
+              properties:
+                ros_node:
+                  type: string
+              required:
+              - ros_node
+              type: object
+            result: {}
+          required:
+          - goal
+          title: post_init参数
+          type: object
+        type: UniLabJsonCommand
+    module: unilabos.devices.custom.electrolytic_cell_gripper:ElectrolyticCellGripper
+    status_types:
+      status: str
+    type: python
+  config_info: []
+  description: ''
+  handles: []
+  icon: ''
+  init_param_schema:
+    config:
+      properties:
+        config:
+          type: object
+        device_id:
+          type: string
+      required: []
+      type: object
+    data:
+      properties:
+        status:
+          type: string
+      required:
+      - status
+      type: object
+  status_types:
+    status:
+      default: Idle
+      description: 'Workstation status: Idle / Busy / Stopped / Error / Offline'
+      type: str
+  version: 1.0.0
